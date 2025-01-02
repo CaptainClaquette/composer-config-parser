@@ -2,6 +2,7 @@
     "name": "hakuryo/config-parser",
     "description": "JSON and INI parser for my other project",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "hakuryo\\ConfigParser\\": "src/"
