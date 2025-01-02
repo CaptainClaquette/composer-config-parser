@@ -1,0 +1,17 @@
+{
+    "name": "hakuryo/config-parser",
+    "description": "JSON and INI parser for my other project",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "hakuryo\\ConfigParser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DERE KEVIN",
+            "email": "kevin.dere@univ-reims.fr"
+        }
+    ],
+    "require": {}
+}
