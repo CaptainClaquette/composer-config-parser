@@ -14,5 +14,7 @@
             "email": "kevin.dere@univ-reims.fr"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    }
 }

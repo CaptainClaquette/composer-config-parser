@@ -4,6 +4,7 @@ namespace hakuryo\ConfigParser;
 
 use hakuryo\ConfigParser\exceptions\FileNotFoundException;
 use hakuryo\ConfigParser\exceptions\InvalidSectionException;
+use hakuryo\ConfigParser\exceptions\MandatoryKeyException;
 use hakuryo\ConfigParser\exceptions\UnsupportedFileTypeException;
 use \JsonException;
 
@@ -95,7 +96,7 @@ class ConfigParser
     {
         foreach ($mandatoryKeys as $key) {
             if (!property_exists($config, $key)) {
-                throw new \Exception("You must provide a file with the followings keys '" . implode("','", $mandatoryKeys) . "'");
+                throw new MandatoryKeyException("You must provide a file with the followings keys '" . implode("','", $mandatoryKeys) . "'");
             }
         }
     }
